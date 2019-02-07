@@ -25,8 +25,7 @@ export default class DataPanel extends Component{
         const isSorted = this.sorted[type]
         let direction = isSorted ? 1 : -1;
         const dataSorted = this.state.data.slice().sort((a,b)=>{
-            const valA = type === "id" ? a[type] : a[type].toLowerCase();
-            const valB = type === "id" ? b[type] : b[type].toLowerCase();
+            const [valA, valB]  = type === "id" ? [a[type], b[type]] : [a[type].toLowerCase(), b[type].toLowerCase()];
             return valA > valB ? direction: direction * -1; 
         })
         this.sorted[type] = !isSorted;

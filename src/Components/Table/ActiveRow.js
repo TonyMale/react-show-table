@@ -3,7 +3,6 @@ import React from 'react'
 export default function ActiveRow(props){
     const {data, index} = props;
     const dataRow = data[index];
-    console.log(dataRow);
     if(!dataRow){
         return (<h5>Выберете пользователя</h5>)
     }        

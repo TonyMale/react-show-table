@@ -1,3 +1,4 @@
+
 import React from 'react'
 
 export default function Paginations(props){
@@ -26,8 +27,7 @@ export default function Paginations(props){
         <ul className = "pagination my-pagination">
             <li className = {isPrev(currentPage === 1)} onClick = {()=> {
                 if(currentPage > 1){
-                    let countPage = currentPage - 1;
-                    console.log(currentPage);
+                    let countPage = currentPage - 1;                   
                     update({currentPage: countPage});
                     
                 }}}
@@ -38,7 +38,6 @@ export default function Paginations(props){
             <li className = {isPrev(currentPage === count)} onClick = {()=> {
                 if(currentPage < count){
                     let countPage = currentPage + 1;
-                    console.log(currentPage);
                     update({currentPage: countPage});                    
                 }}}
             >
