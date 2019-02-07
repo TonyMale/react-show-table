@@ -1,0 +1,55 @@
+.App{
+}
+
+.load-panel{
+  text-align: center;
+}
+.load-panel__title{
+  margin: 50px 0 30px;
+}
+.load-panel__button{
+  margin: 0 15px;
+  width: 120px;
+}
+
+.data-panel{
+
+}
+.data-panel__message{
+  text-align: center;
+  margin: 30px 0;
+}
+.filter{
+  text-align: center;
+  margin: 50px 0;
+}
+.filter__input{
+  width: 30%;
+  margin-right: 15px;
+}
+
+.data-table__header{
+  
+}
+.cell__header{
+  width: 100%;
+}
+.cell__header:after{
+  float: right;
+}
+.cell__header:after{
+  content: "▼";
+  
+}
+.asc.cell__header:after{
+  content: "▲"
+}
+
+.my-pagination{
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.active-row__textarea{
+  height: auto;
+}
